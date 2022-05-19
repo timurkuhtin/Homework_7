@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1.Man.Sneakers.Textile
 {
-    public class TextileSneakersM: SneakersM
-    {
+    public class TextileSneakersM: SneakersM, IShoes
+    {      
         public string name = "Man Textile Sneakers";
         public string material = "Textile";
     }

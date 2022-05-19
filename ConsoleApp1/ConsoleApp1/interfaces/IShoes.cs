@@ -6,12 +6,10 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    public class Shoes : IShoes
+    public interface IShoes
     {
-        string IShoes.name => "Shoes";
-
-        int IShoes.size => 36;
-
-        string IShoes.manufacturer => "Nike";
+        public string name { get; }
+        public int size { get; }
+        public string manufacturer { get; }
     }
 }

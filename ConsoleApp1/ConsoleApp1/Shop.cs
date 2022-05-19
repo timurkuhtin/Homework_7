@@ -38,10 +38,11 @@ namespace ConsoleApp1
         {
             for(int i = 0; i < 10; i++)
             {
-                if (list[i] != ) 
-                { 
-                    this.list = name;
-                }
+                //if (this.list[i].GetType() != Box) 
+                //{ 
+                //    this.list[i] = name;
+                //    break;
+                //}
                 
             }
                 
