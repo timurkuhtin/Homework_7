@@ -8,10 +8,13 @@ namespace ConsoleApp1
 {
     public class Shoes : IShoes
     {
-        string IShoes.name => "Shoes";
+        string name = "Shoes";
+        int size = 36;
+        string manufacturer = "Nike";
+        string IShoes.name => name;
 
-        int IShoes.size => 36;
+        int IShoes.size => size;
 
-        string IShoes.manufacturer => "Nike";
+        string IShoes.manufacturer => manufacturer;
     }
 }

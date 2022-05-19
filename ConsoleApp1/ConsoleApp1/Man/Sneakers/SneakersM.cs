@@ -8,7 +8,7 @@ namespace ConsoleApp1.Man.Sneakers
 {
     public class SneakersM: ManShoes 
     {
-        public string name = "Man Sneakers";
+        public new string name = "Man Sneakers";
         public string type = "Sneakers";
     }
 }

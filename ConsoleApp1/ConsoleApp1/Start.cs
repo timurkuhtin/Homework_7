@@ -13,8 +13,10 @@ namespace ConsoleApp1
         {
             Box asd = new Box();
             Shop shop = new Shop();
-            TextileSneakersM qwe = new TextileSneakersM();
-            
+            TextileSneakersM Sneakers = new TextileSneakersM();
+            asd.Create(Sneakers, 10);
+            shop.AddToList(asd);
+            shop.WriteList();
         }
     }
 }

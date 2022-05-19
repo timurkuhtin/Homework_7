@@ -10,11 +10,11 @@ namespace ConsoleApp1
     public class Box: IBox
     {
         public IShoes name;
-        public int amount;
+        public int amount = 1;
 
-        IShoes IBox.name => throw new NotImplementedException();
+        IShoes IBox.name => name;
 
-        int IBox.amount => throw new NotImplementedException();
+        int IBox.amount => amount;
 
         public void Create(IShoes name, int amount)
         {
