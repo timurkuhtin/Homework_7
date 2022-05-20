@@ -11,5 +11,7 @@ namespace ConsoleApp1
         public string name { get; }
         public int size { get; }
         public string manufacturer { get; }
+
+        public void TryOn();
     }
 }

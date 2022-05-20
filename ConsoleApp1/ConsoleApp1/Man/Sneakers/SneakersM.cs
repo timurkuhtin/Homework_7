@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1.Man.Sneakers
 {
-    public class SneakersM: ManShoes 
+    public class SneakersM: ManShoes, IShoes
     {
         public new string name = "Man Sneakers";
         public string type = "Sneakers";

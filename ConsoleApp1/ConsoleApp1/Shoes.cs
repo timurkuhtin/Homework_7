@@ -11,10 +11,14 @@ namespace ConsoleApp1
         string name = "Shoes";
         int size = 36;
         string manufacturer = "Nike";
+
         string IShoes.name => name;
-
         int IShoes.size => size;
-
         string IShoes.manufacturer => manufacturer;
+
+        public virtual void TryOn()
+        {  
+            Console.WriteLine("Please select a model");
+        }
     }
 }

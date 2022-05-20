@@ -14,9 +14,12 @@ namespace ConsoleApp1
             Box asd = new Box();
             Shop shop = new Shop();
             TextileSneakersM Sneakers = new TextileSneakersM();
+            Shoes shoes = new Shoes();
             asd.Create(Sneakers, 10);
             shop.AddToList(asd);
             shop.WriteList();
+            Sneakers.TryOn();
+            shoes.TryOn();
         }
     }
 }
