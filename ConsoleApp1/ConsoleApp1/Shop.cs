@@ -1,4 +1,10 @@
 ﻿using ConsoleApp1.interfaces;
+using ConsoleApp1.Man.HighShoe;
+using ConsoleApp1.Man.Sneakers.Leather;
+using ConsoleApp1.Man.Sneakers.Textile;
+using ConsoleApp1.Woman.Boots;
+using ConsoleApp1.Woman.LowShoe.Leather;
+using ConsoleApp1.Woman.LowShoe.SuedeLeather;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -53,8 +59,41 @@ namespace ConsoleApp1
             int i = 0;
             while (list[i] != null)
             {
-                Console.WriteLine($"Name {this.list[i].name.name}, Size {this.list[i].name.size}, Manufacturer {this.list[i].name.manufacturer}, Amount {this.list[i].amount}");
-                i++;
+                if (list[i].name is TextileSneakersM sneakerst)
+                {
+                    Console.WriteLine($"Name {sneakerst.name}, Size {list[i].name.size}, Manufacturer {list[i].name.manufacturer}, Amount {list[i].amount}");
+                    i++;
+                }
+                else if(list[i].name is LeatherSneakers sneakersl)
+                {
+                    Console.WriteLine($"Name {sneakersl.name}, Size {list[i].name.size}, Manufacturer {list[i].name.manufacturer}, Amount {list[i].amount}");
+                    i++;
+                }
+                else if(list[i].name is HighShoeM HighShoe)
+                {
+                    Console.WriteLine($"Name {HighShoe.name}, Size {list[i].name.size}, Manufacturer {list[i].name.manufacturer}, Amount {list[i].amount}");
+                    i++;
+                }
+                else if(list[i].name is Boots Boot)
+                {
+                    Console.WriteLine($"Name {Boot.name}, Size {list[i].name.size}, Manufacturer {list[i].name.manufacturer}, Amount {list[i].amount}");
+                    i++;
+                }
+                else if(list[i].name is LeatherLowShoeW LowShoel)
+                {
+                    Console.WriteLine($"Name {LowShoel.name}, Size {list[i].name.size}, Manufacturer {list[i].name.manufacturer}, Amount {list[i].amount}");
+                    i++;
+                }
+                else if(list[i].name is SuedeLeatherLowShoeW LowShoesl)
+                {
+                    Console.WriteLine($"Name {LowShoesl.name}, Size {list[i].name.size}, Manufacturer {list[i].name.manufacturer}, Amount {list[i].amount}");
+                    i++;
+                }
+                else
+                {
+                    Console.WriteLine($"Name {this.list[i].name.name}, Size {this.list[i].name.size}, Manufacturer {this.list[i].name.manufacturer}, Amount {this.list[i].amount}");
+                    i++;
+                }                
             }
         }
     }
